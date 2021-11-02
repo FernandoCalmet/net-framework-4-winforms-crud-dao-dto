@@ -7,7 +7,7 @@ using WinForms_DAO_DTO_Singleton.Entities;
 
 namespace WinForms_DAO_DTO_Singleton.DataAccess
 {
-    class CustomerDAO : ConnectionToSql, ICustomerDAO
+    public class CustomerDAO : ConnectionToSql, ICustomerDAO
     {
         /// <summary>
         /// This class inherits from the ConnectionToSql class.

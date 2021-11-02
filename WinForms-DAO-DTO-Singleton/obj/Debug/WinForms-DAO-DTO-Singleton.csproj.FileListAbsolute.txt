@@ -1,0 +1,11 @@
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\bin\Debug\WinForms-DAO-DTO-Singleton.exe.config
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\bin\Debug\WinForms-DAO-DTO-Singleton.exe
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\bin\Debug\WinForms-DAO-DTO-Singleton.pdb
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms-DAO-DTO-Singleton.csproj.AssemblyReference.cache
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms_DAO_DTO_Singleton.Properties.Resources.resources
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms_DAO_DTO_Singleton.FormCustomers.resources
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms_DAO_DTO_Singleton.UI.FormCustomerMaintenance.resources
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms-DAO-DTO-Singleton.csproj.GenerateResource.cache
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms-DAO-DTO-Singleton.csproj.CoreCompileInputs.cache
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms-DAO-DTO-Singleton.exe
+D:\Github\FernandoCalmet\CS-WinForms-DAO-DTO-Singleton\WinForms-DAO-DTO-Singleton\obj\Debug\WinForms-DAO-DTO-Singleton.pdb
