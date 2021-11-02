@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using WinForms_DAO_DTO_Singleton.Common;
 using WinForms_DAO_DTO_Singleton.Contracts;
 using WinForms_DAO_DTO_Singleton.DataAccess;
+using WinForms_DAO_DTO_Singleton.DataTransfer;
 using WinForms_DAO_DTO_Singleton.Entities;
 using WinForms_DAO_DTO_Singleton.UI;
 
@@ -13,6 +14,7 @@ namespace WinForms_DAO_DTO_Singleton
     {
         #region -> Fields
         private readonly ICustomerDAO customerData = new CustomerDAO();
+        private List<CustomerDTO> customerDTOList;
         private List<Customer> customerList;
         private FormCustomerMaintenance maintenanceForm;
         #endregion             
@@ -27,8 +29,8 @@ namespace WinForms_DAO_DTO_Singleton
         #region -> Methods
         private void LoadCustomerData()
         {// Fill the data grid with the list of customers.
-            customerList = customerData.GetAll(); // Get all customers.
-            dataGridView1.DataSource = customerList; // Set the data source.
+            customerDTOList = customerData.GetAll(); // Get all customers.
+            dataGridView1.DataSource = customerDTOList; // Set the data source.
         }
         private void FindCustomer(string name)
         { //Search customers.

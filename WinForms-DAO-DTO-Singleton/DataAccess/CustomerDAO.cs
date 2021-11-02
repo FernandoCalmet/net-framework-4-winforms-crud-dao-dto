@@ -62,6 +62,7 @@ namespace WinForms_DAO_DTO_Singleton.DataAccess
                     command.Parameters.AddWithValue("@email", customer.Email);
                     command.Parameters.AddWithValue("@phone", customer.Phone);
                     command.Parameters.AddWithValue("@job", customer.Job);
+                    command.Parameters.AddWithValue("@id", customer.Id);
                     command.CommandType = CommandType.StoredProcedure;
                     result = command.ExecuteNonQuery();
                 }
@@ -70,7 +71,7 @@ namespace WinForms_DAO_DTO_Singleton.DataAccess
             return result;
         }
 
-        public int Remove(int id)
+        public int Remove(Customer customer)
         {
             int result = -1;
 
@@ -82,7 +83,7 @@ namespace WinForms_DAO_DTO_Singleton.DataAccess
                 {
                     command.Connection = connection;
                     command.CommandText = "delete_customer_sp";
-                    command.Parameters.AddWithValue("@id", id);
+                    command.Parameters.AddWithValue("@id", customer.Id);
                     command.CommandType = CommandType.StoredProcedure;
                     result = command.ExecuteNonQuery();
                 }
@@ -129,44 +130,9 @@ namespace WinForms_DAO_DTO_Singleton.DataAccess
             return customer;
         }
 
-        public CustomerDTO GetDTOById(int id)
+        public List<CustomerDTO> GetAll()
         {
-            CustomerDTO customer = null;
-
-            using (var connection = GetConnection())
-            {
-                connection.Open();
-
-                using (var command = new SqlCommand())
-                {
-                    command.Connection = connection;
-                    command.CommandText = "select_customer_sp";
-                    command.Parameters.AddWithValue("@id", id);
-                    command.CommandType = CommandType.StoredProcedure;
-
-                    SqlDataReader reader = command.ExecuteReader();
-                    if (reader.Read())
-                    {
-                        var obj = new CustomerDTO
-                        {
-                            Id = (int)reader[0],
-                            FirstName = reader[1].ToString(),
-                            LastName = reader[2].ToString(),
-                            City = reader[3].ToString(),
-                            Email = reader[4].ToString()
-                        };
-
-                        customer = obj;
-                    }
-                }
-            }
-
-            return customer;
-        }
-
-        public List<Customer> GetAll()
-        {
-            var customers = new List<Customer>();
+            var customers = new List<CustomerDTO>();
 
             using (var connection = GetConnection())
             {
@@ -183,16 +149,13 @@ namespace WinForms_DAO_DTO_Singleton.DataAccess
                     {
                         while (reader.Read())
                         {
-                            var customer = new Customer
+                            var customer = new CustomerDTO
                             {
                                 Id = reader.GetInt32(0),
                                 FirstName = reader[1].ToString(),
                                 LastName = reader[2].ToString(),
-                                Address = reader[3].ToString(),
                                 City = reader[4].ToString(),
                                 Email = reader[5].ToString(),
-                                Phone = reader[6].ToString(),
-                                Job = reader[7].ToString()
                             };
 
                             customers.Add(customer);

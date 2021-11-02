@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +53,7 @@
     <Compile Include="DataAccess\CustomerDAO.cs" />
     <Compile Include="DataTransfer\CustomerDTO.cs" />
     <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Helpers\DataValidation.cs" />
     <Compile Include="UI\FormCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +68,7 @@
     <Compile Include="UI\FormCustomerMaintenance.Designer.cs">
       <DependentUpon>FormCustomerMaintenance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\ExceptionManager.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

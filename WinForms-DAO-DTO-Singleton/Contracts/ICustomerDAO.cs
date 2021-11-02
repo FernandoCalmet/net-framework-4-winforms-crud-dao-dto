@@ -8,10 +8,9 @@ namespace WinForms_DAO_DTO_Singleton.Contracts
     {
         int Create(Customer customer);
         int Edit(Customer customer);
-        int Remove(int id);
+        int Remove(Customer customer);
         Customer GetById(int id);
-        CustomerDTO GetDTOById(int id);
-        List<Customer> GetAll();
+        List<CustomerDTO> GetAll();
         List<Customer> Search(string name);
     }
 }
