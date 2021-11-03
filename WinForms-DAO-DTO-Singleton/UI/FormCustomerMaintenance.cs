@@ -40,7 +40,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             transaction = _transaction;
 
             //Initialize control properties
-            FillFields(_customer);
+            FillFields(customer);
             InitializeTransactionUI();
         }
         #endregion
@@ -67,6 +67,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
                     break;
                 case TransactionAction.Remove:
                     lblTitle.Text = "Remove Customer";
+                    btnSave.Text = "Remove";
                     lblTitle.ForeColor = Color.IndianRed;
                     ReadOnlyFields();
                     break;
@@ -104,16 +105,17 @@ namespace WinForms_DAO_DTO_Singleton.UI
         }
         private Customer FillViewModel()
         {//Fill and return the data of the form fields in a new customer object.
-            var customerView = new Customer();
-
-            customerView.Id = customer.Id;
-            customerView.FirstName = customer.FirstName;
-            customerView.LastName = customer.LastName;
-            customerView.Address = customer.Address;
-            customerView.City = customer.City;
-            customerView.Email = customer.Email;
-            customerView.Phone = customer.Phone;
-            customerView.Job = customer.Job;
+            var customerView = new Customer
+            {
+                Id = customer.Id,
+                FirstName = txtFirstName.Text,
+                LastName = txtLastName.Text,
+                Address = txtAddress.Text,
+                City = txtCity.Text,
+                Email = txtEmail.Text,
+                Phone = txtPhone.Text,
+                Job = txtJob.Text
+            };
 
             return customerView;
         }
@@ -171,16 +173,16 @@ namespace WinForms_DAO_DTO_Singleton.UI
 
                 if (validateData.Result == true)
                 {
-                    var customerModel = customer;
+                    var customerModel = customerObject;
                     switch (transaction)
                     {
-                        case TransactionAction.Add://Add user
+                        case TransactionAction.Add:
                             AddCustomer(customerModel);
                             break;
-                        case TransactionAction.Edit://Edit user
+                        case TransactionAction.Edit:
                             EditCustomer(customerModel);
                             break;
-                        case TransactionAction.Remove://Remove user
+                        case TransactionAction.Remove:
                             RemoveCustomer(customerModel);
                             break;
                     }
