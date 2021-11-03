@@ -1,6 +1,6 @@
-# CS WinForms DAO DTO Singleton
+# CS WinForms CRUD DAO DTO Singleton
 
-Project sample: C# Windows Forms NET Framework using Design patterns Data Abstract Object + Data Transfer Object + Singleton (Search and filter data) with SQL SERVER
+Project CRUD sample: C# Windows Forms NET Framework using Design patterns Data Abstract Object + Data Transfer Object + Singleton (Search and filter data) with SQL SERVER
 
 ---
 
