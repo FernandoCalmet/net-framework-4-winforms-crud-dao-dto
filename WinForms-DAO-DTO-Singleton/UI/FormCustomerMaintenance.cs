@@ -124,7 +124,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             var result = customerData.Create(_customer);
             if (result > 0)
             {
-                LastRecord = _customer.FirstName;
+                LastRecord = _customer.Email;
                 MessageBox.Show("Customer added successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
@@ -139,7 +139,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             var result = customerData.Edit(_customer);
             if (result > 0)
             {
-                LastRecord = _customer.FirstName;
+                LastRecord = _customer.Email;
                 MessageBox.Show("Customer updated successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }

@@ -66,7 +66,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.txtEmail.Location = new System.Drawing.Point(14, 170);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(230, 22);
-            this.txtEmail.TabIndex = 96;
+            this.txtEmail.TabIndex = 3;
             // 
             // lblLastName
             // 
@@ -86,7 +86,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.txtLastName.Location = new System.Drawing.Point(14, 120);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(230, 22);
-            this.txtLastName.TabIndex = 95;
+            this.txtLastName.TabIndex = 2;
             // 
             // txtFirstName
             // 
@@ -94,7 +94,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.txtFirstName.Location = new System.Drawing.Point(14, 70);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(230, 22);
-            this.txtFirstName.TabIndex = 94;
+            this.txtFirstName.TabIndex = 1;
             // 
             // lblFirstName
             // 
@@ -129,7 +129,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.btnSave.Location = new System.Drawing.Point(380, 265);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 40);
-            this.btnSave.TabIndex = 101;
+            this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -144,7 +144,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.btnCancel.Location = new System.Drawing.Point(224, 265);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(150, 40);
-            this.btnCancel.TabIndex = 102;
+            this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "X  Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -167,7 +167,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.txtPhone.Location = new System.Drawing.Point(14, 218);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(230, 22);
-            this.txtPhone.TabIndex = 103;
+            this.txtPhone.TabIndex = 4;
             // 
             // lblAddress
             // 
@@ -188,7 +188,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(262, 78);
-            this.txtAddress.TabIndex = 105;
+            this.txtAddress.TabIndex = 5;
             // 
             // lblCity
             // 
@@ -208,7 +208,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.txtCity.Location = new System.Drawing.Point(266, 170);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(265, 22);
-            this.txtCity.TabIndex = 107;
+            this.txtCity.TabIndex = 6;
             // 
             // lblJob
             // 
@@ -228,7 +228,7 @@ namespace WinForms_DAO_DTO_Singleton.UI
             this.txtJob.Location = new System.Drawing.Point(266, 218);
             this.txtJob.Name = "txtJob";
             this.txtJob.Size = new System.Drawing.Size(265, 22);
-            this.txtJob.TabIndex = 109;
+            this.txtJob.TabIndex = 7;
             // 
             // FormCustomerMaintenance
             // 

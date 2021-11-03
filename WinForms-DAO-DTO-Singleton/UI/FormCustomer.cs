@@ -135,13 +135,6 @@ namespace WinForms_DAO_DTO_Singleton
             if (lastData != null) // If you have a last record.
             {
                 LoadCustomerData(); // Update the datagridview.
-                if (lastData != "") // If the last record field is different from an empty string, then you should highlight and display the added or edited customer.
-                {
-                    var index = customerList.FindIndex(c => c.FirstName == lastData); // Find the index of the last customer registered or modified.
-                    dataGridView1.CurrentCell = dataGridView1.Rows[index].Cells[0]; // Focus the cell of the last record.
-                    dataGridView1.Rows[index].Selected = true; // Select row.
-                    // Note, if you added multiple customers at the same time (Bulk insert) the first record in the customer collection will be selected.
-                }
             }
         }
         #endregion
