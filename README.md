@@ -29,6 +29,9 @@ Ejecutar aplicación.
 dotnet run
 ```
 
+- Ejecutar el query `Database.sql` en SQLServer.
+- Configurar la conexión a base de datos en el archivo `DataAccess/ConnectionToSql.cs`.
+
 ## 📄 LICENCIA
 
 Este proyecto está bajo la Licencia (Licencia MIT) - mire el archivo [LICENSE](LICENSE) para más detalles.
