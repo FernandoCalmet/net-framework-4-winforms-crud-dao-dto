@@ -20,7 +20,7 @@ Este proyecto es una muestra de CRUD con filtro de busqueda de datos utilizando 
 Clonar el repositorio.
 
 ```bash
-gh repo clone FernandoCalmet/NET-Framework-4-WinForms-CRUD-DAO-DTO
+gh repo clone FernandoCalmet/net-framework-4-winforms-crud-dao-dto
 ```
 
 Ejecutar aplicación.
